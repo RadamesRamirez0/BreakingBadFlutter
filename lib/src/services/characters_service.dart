@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'package:breakingbad/src/models/characters_model.dart';
-// ! Borrar
 import 'dart:developer';
 
 class CharactersService {

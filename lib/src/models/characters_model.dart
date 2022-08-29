@@ -25,7 +25,7 @@ class Character {
   List<int> appearance;
   String portrayed;
   String category;
-  List<String> betterCallSaulAppearance;
+  List<int> betterCallSaulAppearance;
 
   factory Character.fromJson(Map<String, dynamic> json) => Character(
         charId: json["char_id"],
@@ -38,7 +38,7 @@ class Character {
         appearance: List<int>.from(json["appearance"].map((x) => x)),
         portrayed: json["portrayed"],
         category: json["category"],
-        betterCallSaulAppearance: List<String>.from(
-            json["better_call_saul_appearance"].map((x) => x)),
+        betterCallSaulAppearance:
+            List<int>.from(json["better_call_saul_appearance"].map((x) => x)),
       );
 }
